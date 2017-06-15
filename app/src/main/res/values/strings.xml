@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">HappyPark</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main">HappyPark</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- valide ovunque -->
+    <string name="email">E-mail di accesso</string>
+    <string name="telefono">Telefono</string>
+    <string name="password">Password</string>
+    <string name="loading">Caricamento dati in corso...</string>
+    <string name="errDb">Errore nel database,caricamento dati fallito!</string>
+
+
+    <!-- MapFragment -->
+
+    <string name="prEU">Prezzo:</string>
+    <string name="altraOra">Prezzo per ogni ulteriore ora:</string>
+    <string name="maxGiorno">Prezzo massimo giornaliero:</string>
+    <string name="maxWeek">Tariffa settimanale:</string>
+    <string name="maxMonth">Tariffa mensile:</string>
+    <string name="mobilePhone">Telefono:</string>
+    <string name="pageWeb">Pagina web:</string>
+    <string name="notSpecified">non specificato</string>
+
+    <!-- AddWithTextFragment -->
+
+    <!--AddWithMapFragment     -->
+
+    <string name="resFor">Riservato per...</string>
+    <string name="price">Prezzo(€/h)</string>
+    <string name="otherH">Prezzo per ogni ulteriore ora (opz.)</string>
+    <string name="maxD">Prezzo massimo giornaliero (opz.)</string>
+    <string name="tariffaW">Tariffa settimanale (opzionale)</string>
+    <string name="tariffaM">Tariffa mensile (opzionale)</string>
+    <string name="tF">Telefono (opzionale)</string>
+    <string name="wP">Pagina web (opzionale)</string>
+    <string name="addPark">Caricamento parcheggio in corso...</string>
+    <string name="addParkSuccess">Caricamento avvenuto con successo!</string>
+    <string name="addParkFail">C\'è stato un errore nel caricamento!</string>
+    <string name="notCountry">Il marker non può esser inserito fuori dall\'Italia (per ora)
+        e deve essere inserito in dei parcheggi effettivi!</string>
+
+
+    <!-- SignUpActivity   -->
+    <string name="wrongMail">L\'e-mail inserita non è in formato corretto!</string>
+    <string name="insertPw">Inserire una password</string>
+    <string name="noUserCreated">Non è stato possibile effettuare il login poichè non esiste un utente con queste credenziali. Riprova!</string>
+    <string name="errorLogin">Non è stato possibile effettuare il login. Username e password potrebbero essere errati. Riprova!</string>
+    <string name="userName">Nome utente</string>
+    <string name="pwName">Password</string>
+    <string name="lostPassword">Hai dimenticato le credenziali di accesso?</string>
+    <string name="logIn">Accedi</string>
+    <string name="register">Non hai un account? Iscriviti</string>
+
+    <!--LostPasswordActivity -->
+
+    <string name="userRecovery">Inserire l\'username di accesso</string>
+    <string name="sendMail">Invia mail di recupero</string>
+    <string name="sendingMail">Invio e-mail in corso...</string>
+    <string name="sentTo">E-mail inviata con successo a </string>
+    <string name="wrongSent">C\'è stato un errore nell\'invio della mail...riprova!</string>
+
+
+    <!-- SegnalationFragment -->
+
+    <string name="motivation">Inserire qui ulteriori dettagli sul parcheggio segnalato (massimo 80 caratteri)</string>
+    <string name="typeSegnalation">Il parcheggio viene segnalato perchè...</string>
+    <string name="sendSegnalation">Invia segnalazione</string>
+    <string name="errTypeCat">Tipologia errata</string>
+    <string name="errPrice">Prezzo errato</string>
+    <string name="errLoc">Il parcheggio inserito in quel luogo non esiste</string>
+    <string name="errRes">Il parcheggio è riservato per un altro motivo</string>
+    <string name="errPay">Alcuni prezzi/dettagli inseriti nel parcheggio a pagamento sono errati</string>
+    <string name="goBack">Indietro</string>
+    <string name="loadSegn">Caricamento segnalazione in corso...</string>
+    <string name="oksegn">Segnalazione caricata con successo!</string>
+    <string name="badsegn">Errore nel caricamento della segnalazione...riprovare!</string>
+
+    <!-- CardPark + ShowParkAdapter  -->
+
+    <string name="added">Aggiunto il:</string>
+    <string name="typology">Tipologia:</string>
+    <string name="state">Stato:</string>
+    <string name="segnalations">Segnalazioni:</string>
+    <string name="infoStato">Lo stato identifica se il parcheggio è valido o non valido.
+    Se il parcheggio è valido comparirà la scritta "Verificato". Se è stato appurato che
+    il parcheggio non è valido, comparirà la scritta "Cancellato"</string>
+    <string name="infoSign">Segnalazioni indica il numero di utenti che hanno segnalato il parcheggio.
+    La segnalazione contribuisce alla cancellazione di un parcheggio.</string>
+
+    <!-- InfoWindows -->
+
+    <string name="buttonInfoName">informazioni</string>
+    <string name="tipologia">Tipologia:</string>
+    <string name="gratis">Gratuito</string>
+    <string name="reservedFor">Riservato per:</string>
+    <string name="priceOra">Prezzo: </string>
+    <string name="segnalForm">Segnala</string>
+    <string name="back">Indietro</string>
+
+
+    <!-- ProfileFragment -->
+
+    <string name="dateBirth">Data di nascita:</string>
+    <string name="newAdd">Aggiungi indirizzo di spedizione</string>
+    <string name="comingsoon">Questa sezione sarà disponibile nelle prossime versioni di HappyPark
+    e consentirà di poter vincere dei premi agli utenti che si impegneranno a inserire i parcheggi e
+    a portare nuovi utenti :)
+    </string>
+    <string name="mobile">Telefono:</string>
+    <string name="emailAccess">E-mail di accesso:</string>
+    <string name="parkAdded">Parcheggi aggiunti:</string>
+    <string name="lastparkAdded">Ultimo parcheggio:</string>
+    <string name="bonusPoint">Punti bonus guadagnati:</string>
+    <string name="never">mai</string>
+
+    <!-- RegisterActivity -->
+    <string name="iscriviti">Iscriviti</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="userCreate">Creazione nuovo utente in corso...</string>
+    <string name="noUserCreate">Non è stato possibile creare un nuovo utente (l\'utente può già essere registrato)...riprova!</string>
+    <string name="uploadProf">Upload informazioni in corso...</string>
+    <string name="upload">Upload foto in corso...</string>
+    <string name="noUpload">Errori nell\'upload della foto e dei dati! (Il login è già possibile effettuarlo) </string>
+    <string name="photoUpload">Upload foto in corso...</string>
+    <string name="noPhotoUpload">Errori nell\'upload della foto (il profilo sarà comunque utilizzabile facendo il login, anche se incompleto!</string>
+    <string name="finalUpload">Aggiornamento finale del profilo in corso...</string>
+    <string name="okProfile">Caricamento del profilo completato! Ora è possibile fare il login.</string>
+    <string name="noProfile">Non è stato possibile completare il caricamento del profilo. Sarà possibile effetture il login, ma il profilo risulterà mancante!</string>
+    <string name="noVoidPhone">Il campo "Telefono" è obbligatorio</string>
+    <string name="errorPhone">Inserire un numero di telefono valido</string>
+    <string name="wrongName">Il nome inserito non è valido!</string>
+    <string name="wrongSurname">Il cognome inserito non è valido!</string>
+    <string name="wrongData">La data inserita non è valida! (Si possono iscrivere coloro nati prima del 01/01/2006)</string>
+    <string name="lostData">Inserire una data!</string>
+    <string name="wrongMailFormat">L\'email non è in formato corretto!</string>
+    <string name="wrongPw">La password deve esser lunga almeno 6 caratteri e deve contenere almeno un numero,
+    una lettera maiuscola, una lettera minuscola e uno di questi simboli: @#$%</string>
+    <string name="camera">Fotocamera</string>
+    <string name="gallery">Galleria</string>
+    <string name="indietro">Indietro</string>
+    <string name="addPhoto">Aggiungi una foto</string>
+    <string name="choosePhoto">Scelta foto in corso...</string>
+    <string name="okAddPhoto">Foto aggiunta</string>
+    <string name="errAddPhoto">Non è stato possibile caricare questa immagine!</string>
+    <string name="noAuthWrite">Autorizzazione non concessa, senza autorizzazione non è possibile registrarsi!</string>
+
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>
