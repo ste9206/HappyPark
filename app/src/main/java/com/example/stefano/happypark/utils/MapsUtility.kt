@@ -43,4 +43,20 @@ object MapsUtility {
                 .icon(BitmapDescriptorFactory.defaultMarker(colorMarker))
     }
 
- }
+    fun addMarker(latitude: Double, longitude: Double, color: Float): MarkerOptions? {
+       return MarkerOptions()
+                .position(LatLng(latitude, longitude))
+                .icon(BitmapDescriptorFactory.defaultMarker(color))
+    }
+
+    fun  cardCamera(latitude: Double, longitude: Double): CameraUpdate? {
+        val cameraPosition = CameraPosition.Builder()
+                .target(LatLng(latitude, longitude))
+                .zoom(17f).build()
+
+        return CameraUpdateFactory.newLatLngZoom(LatLng(latitude, longitude), 15f)
+    }
+
+
+
+}

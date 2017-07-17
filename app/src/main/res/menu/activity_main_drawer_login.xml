@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
        <item
             android:id="@+id/mappa"
-            android:icon="@drawable/ic_menu_gallery"
+           android:icon="@android:drawable/ic_dialog_map"
             android:title="Mappa" />
      </group>
 

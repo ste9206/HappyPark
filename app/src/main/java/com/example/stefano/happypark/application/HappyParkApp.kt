@@ -25,7 +25,8 @@ class HappyParkApp: Application() {
         appComponent = DaggerAppComponent
                 .builder()
                 .appModule(AppModule(this))
-                .firebaseComponent(createFirebaseComponent()).build()
+                .firebaseComponent(createFirebaseComponent())
+                .retrofitComponent(createRetrofitComponent()).build()
 
         return appComponent!!
 
@@ -38,4 +39,13 @@ class HappyParkApp: Application() {
                 .firebaseModule(FirebaseModule())
                 .build()
     }
+
+    fun createRetrofitComponent():RetrofitComponent
+    {
+        return DaggerRetrofitComponent
+                .builder()
+                .retrofitModule(RetrofitModule())
+                .build()
+    }
+
 }

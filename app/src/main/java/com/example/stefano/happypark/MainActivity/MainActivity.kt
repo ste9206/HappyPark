@@ -21,6 +21,8 @@ import javax.inject.Inject
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.CollapsingToolbarLayout
 import com.example.stefano.happypark.fragments.MapFragment.MapFragment
+import com.example.stefano.happypark.fragments.ParkFragment.ParkFragment
+import com.example.stefano.happypark.utils.CircleTransformation
 import kotlinx.android.synthetic.main.activity_sign_up.view.*
 
 
@@ -43,13 +45,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         loadDrawerSettings()
         loadNavigationViewSettings()
-        loadFirstFragment()
+        loadMapFragment()
 
-    }
-
-    private fun loadFirstFragment() {
-        val fragmentManager = supportFragmentManager
-        fragmentManager.beginTransaction().replace(R.id.contentMain, MapFragment()).commit()
     }
 
     private fun loadNavigationViewSettings() {
@@ -84,6 +81,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when(id){
             R.id.mappa -> presenter.onDrawerMenuMapClicked()
             R.id.login -> presenter.onDrawerLoginClicked()
+            R.id.addPark -> presenter.onDrawerParkClicked()
             R.id.logOut -> presenter.onLogOut()
         }
 
@@ -102,10 +100,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         logo?.visibility = View.GONE
         profile?.visibility = View.VISIBLE
         email?.visibility = View.VISIBLE
+        email?.text = mail
         navigationView.menu.clear()
         navigationView.inflateMenu(R.menu.activity_main_drawer)
 
-        Glide.with(this).load(img).asBitmap().into(profile)
+        Glide.with(this).load(img).asBitmap().transform(CircleTransformation(this)).into(profile)
     }
 
     override fun setDisableCollapse() {
@@ -130,7 +129,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun loadMapFragment() {
+        val fragmentManager = supportFragmentManager
+        fragmentManager.beginTransaction().replace(R.id.contentMain, MapFragment()).commit()
+    }
 
+    override fun loadParkFragment() {
+        val fragmentManager = supportFragmentManager
+        fragmentManager.beginTransaction().replace(R.id.contentMain, ParkFragment()).commit()
     }
 
     override fun loadSignInActivity() {

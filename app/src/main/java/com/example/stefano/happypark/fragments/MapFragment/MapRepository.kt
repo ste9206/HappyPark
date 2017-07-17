@@ -31,7 +31,7 @@ class MapRepository @Inject constructor(private var fAuth:FirebaseAuth, private 
 
     override fun onDataChange(snapshot: DataSnapshot?) {
        snapshot?.children?.forEach { data ->
-           val location = snapshot.getValue(Location::class.java)
+           val location = data.getValue(Location::class.java)
            callback?.onLocationLoaded(location)
        }
     }

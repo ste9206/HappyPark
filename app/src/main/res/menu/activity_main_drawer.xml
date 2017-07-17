@@ -7,6 +7,11 @@
             android:icon="@android:drawable/ic_dialog_map"
             android:title="Home" />
 
+        <item
+            android:id="@+id/addPark"
+            android:icon="@drawable/ic_local_parking_black_24dp"
+            android:title="Parcheggi aggiunti" />
+
     </group>
 
     <item android:title="Communicate">

@@ -18,6 +18,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.MapView
 import com.google.android.gms.maps.MapsInitializer
 import com.google.android.gms.maps.model.MarkerOptions
+import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.fragment_map.*
 import java.util.*
 import javax.inject.Inject
@@ -130,6 +131,7 @@ class MapFragment : Fragment() , MapContract.View{
         super.onSaveInstanceState(outState)
         mapView.let { mapView -> mapView?.onSaveInstanceState(outState) }
     }
+
 
 
 

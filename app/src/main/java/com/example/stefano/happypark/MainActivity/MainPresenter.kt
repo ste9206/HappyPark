@@ -19,6 +19,10 @@ class MainPresenter @Inject constructor(var firebaseService: FirebaseService,var
         contractView = null
     }
 
+    override fun onDrawerParkClicked() {
+        contractView?.loadParkFragment()
+    }
+
     override fun loadAllData() {
 
       val authUser = firebaseService.getCurrentUser()
@@ -34,7 +38,7 @@ class MainPresenter @Inject constructor(var firebaseService: FirebaseService,var
     }
 
     override fun onDrawerMenuMapClicked() {
-
+      contractView?.loadMapFragment()
     }
 
     override fun onDrawerLoginClicked() {

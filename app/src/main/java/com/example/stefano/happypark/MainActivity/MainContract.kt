@@ -14,7 +14,7 @@ interface MainContract {
         fun setDisableCollapse()
         fun loadMapFragment()
         fun loadSignInActivity()
-
+        fun loadParkFragment()
     }
 
     interface Presenter{
@@ -25,6 +25,7 @@ interface MainContract {
         fun onDrawerMenuMapClicked()
         fun onDrawerLoginClicked()
         fun onLogOut()
+        fun onDrawerParkClicked()
     }
 
     interface Repository{

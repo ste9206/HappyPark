@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "614040843318",
+    "firebase_url": "https://happypark-170613.firebaseio.com",
+    "project_id": "happypark-170613",
+    "storage_bucket": "happypark-170613.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614040843318:android:e224437e4b0ebe38",
+        "android_client_info": {
+          "package_name": "com.example.stefano.happypark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614040843318-mmku10mt7gtg9n8kqkvsrkqk5t2kgac8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1bY1I3A_v0XqhEFUiEyDbT7WkBzYm0mg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
